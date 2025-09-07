@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elb_ardu_disc"
+version = "0.1.0"
+description = "Python library to control the ELB_ARDU_DISC"
+dependencies = [
+            "pyserial"
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
